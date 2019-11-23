@@ -1,7 +1,32 @@
-#vinylImg {
+#songInfoDiv {
+    width: 30%; 
+    float: left;
+    background: red;
+}
+
+#vinylDiv {
+    width: 40%;
+    float: left;
+    background: green;
+    text-align: center;
+}
+
+#discDiv {
     width: 30%;
+    float: left;
+    background: blue;
+    text-align: center;
+}
+
+#vinylImg {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
 }
 
 #discImg {
-    width: 10%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 30%;
+    margin: auto;
 }
