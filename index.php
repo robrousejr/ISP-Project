@@ -45,13 +45,13 @@
     </div><br>
     <script src="js/helpbutton.js"></script>
 
-   
     <!-- Song Information Div -->
     <div id="songInfoDiv">
         <img src="img/generic cover.jpg">
         <h2>Song Title</h2>
-        <h4>Artist</h2>
-        <h4>Album</h2>
+        <h4>Artist</h4>
+        <h4>Album</h4>
+        <h4>Year</h4>
     </div>
 
     <!-- Vinyl Player -->
@@ -65,6 +65,25 @@
         <img src="img/disc.png" id="discImg">
     </div>
     <br style="clear:left;"/>
+
+    
+    <table id="musicTable">
+        <tr>
+            <th>Song</th>
+            <th>Artist</th>
+            <th>Album</th>
+            <th>Year</th>
+        </tr>
+        <?php
+            $musicCount = count($music); // Holds amount of songs in table
+
+            // Fill table with songs
+            for ($x = 0; $x <= $musicCount - 1; $x++)
+            {
+                echo "<tr><th>" . $music[$x]['Song_name'] . "</th><th>" . $music[$x]['Artist'] . "</th><th>" . $music[$x]['Album'] . "</th><th>" . $music[$x]['Year'] . "</th></tr>";
+            }
+        ?>
+    </table>
     
 
 </body>

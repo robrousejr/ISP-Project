@@ -1,0 +1,10 @@
+#musicTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#musicTable th, tr {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 6px;
+}
