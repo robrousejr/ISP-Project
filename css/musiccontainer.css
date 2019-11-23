@@ -1,9 +1,21 @@
+/* Song Information Div with image, title, artist, album */
 #songInfoDiv {
     width: 30%; 
     float: left;
     background: lightcyan;
     font-family: 'Alata', sans-serif;
     text-align: center;
+    line-height: 10px;
+}
+
+/* Album cover photo */
+#songInfoDiv img {
+    max-width: 70%;
+}
+
+#songInfoDiv h4 {
+    font-style: italic;
+    font-weight: normal;
 }
 
 #vinylDiv {

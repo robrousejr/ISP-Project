@@ -48,9 +48,10 @@
    
     <!-- Song Information Div -->
     <div id="songInfoDiv">
+        <img src="img/generic cover.jpg">
         <h2>Song Title</h2>
-        <h2>Artist</h2>
-        <h2>Album</h2>
+        <h4>Artist</h2>
+        <h4>Album</h2>
     </div>
 
     <!-- Vinyl Player -->
