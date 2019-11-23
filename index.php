@@ -6,8 +6,16 @@
     // check connection
     if(!$conn)
     {
-        echo "Connection error: " . mysqli_connect_error();
+        echo "Connection error: " . mysqli_connect_error(); // output connection error
     }
+
+    $sql = 'SELECT Song_name, Artist, Album, Year FROM music';
+    $result = mysqli_query($conn, $sql); // Stores all table data in query
+    $music = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    // print_r($music); // prints out all music records in table 
+
+
 ?>
 
 <!DOCTYPE html>
