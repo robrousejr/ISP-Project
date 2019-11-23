@@ -68,7 +68,7 @@
 
     
     <table id="musicTable">
-        <tr>
+        <tr style="border-bottom: 3px solid black;">
             <th>Song</th>
             <th>Artist</th>
             <th>Album</th>
