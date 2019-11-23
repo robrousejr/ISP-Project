@@ -1,3 +1,9 @@
+<?php
+
+    // php code
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
