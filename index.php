@@ -80,10 +80,20 @@
             // Fill table with songs
             for ($x = 0; $x <= $musicCount - 1; $x++)
             {
-                echo "<tr><th>" . $music[$x]['Song_name'] . "<span class='playButton'> &#9658; </span>". "</th><th>" . $music[$x]['Artist'] . "</th><th>" . $music[$x]['Album'] . "</th><th>" . $music[$x]['Year'] . "</th></tr>";
+                echo "<tr><th>" . $music[$x]['Song_name'] . "<span class='playButton' onclick='playSong($x)'> &#9658; </span>". "</th><th>" . $music[$x]['Artist'] . "</th><th>" . $music[$x]['Album'] . "</th><th>" . $music[$x]['Year'] . "</th></tr>";
             }
         ?>
     </table>
+
+    <script>
+
+        // Pre: x is the number the song is in the array
+        function playSong(x)
+        {
+            var song = new Audio('music/' + (x + 1) + '.mp3');
+            song.play();
+        }
+    </script>
     
 
 </body>
