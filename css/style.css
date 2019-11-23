@@ -12,3 +12,11 @@
     font-weight: normal; 
 }
 
+.playButton {
+    color: red;
+}
+
+.playButton:hover, .playButton:focus {
+    cursor: pointer;
+    color: yellow;
+}

@@ -80,7 +80,7 @@
             // Fill table with songs
             for ($x = 0; $x <= $musicCount - 1; $x++)
             {
-                echo "<tr><th>" . $music[$x]['Song_name'] . "</th><th>" . $music[$x]['Artist'] . "</th><th>" . $music[$x]['Album'] . "</th><th>" . $music[$x]['Year'] . "</th></tr>";
+                echo "<tr><th>" . $music[$x]['Song_name'] . "<span class='playButton'> &#9658; </span>". "</th><th>" . $music[$x]['Artist'] . "</th><th>" . $music[$x]['Album'] . "</th><th>" . $music[$x]['Year'] . "</th></tr>";
             }
         ?>
     </table>
