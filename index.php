@@ -1,7 +1,11 @@
 <?php
 
     // connect to database
-    $conn = mysqli_connect('localhost', 'ispuser', 'ispuserpassword', 'isp');
+    $host = 'localhost';
+    $username = 'ispuser';
+    $password = 'ispuserpassword';
+    $table = 'isp';
+    $conn = mysqli_connect($host, $username, $password, $table);
 
     // check connection
     if(!$conn)
