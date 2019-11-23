@@ -29,6 +29,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/helpmodal.css">
         <link rel="stylesheet" type="text/css" href="css/musiccontainer.css">
+        <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
     </head>
 <body>
 
