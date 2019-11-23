@@ -14,7 +14,7 @@
     $music = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     // print_r($music); // prints out all music records in table 
-
+    // print_r($music[0]['Song_name']); // Get song name for 0th element
 
 ?>
 
@@ -41,7 +41,7 @@
     <script src="js/helpbutton.js"></script>
 
    
-    <!-- Song Information -->
+    <!-- Song Information Div -->
     <div id="songInfoDiv">
         <h2>Song Title</h2>
         <h2>Artist</h2>
