@@ -85,30 +85,7 @@
         ?>
     </table>
     <button onclick="stopSong()">Stop</button>
-
-    <script>
-        var song;
-        var songPlaying = false;
-
-        // Pre: x is the number the song is in the array
-        function playSong(x)
-        {
-            if(songPlaying == false)
-            {
-                song = new Audio('music/' + (x + 1) + '.mp3');
-                song.play();
-                songPlaying = true;
-            }
-        }
-
-        function stopSong()
-        {
-            song.pause();
-            song.currentTime = 0;
-            songPlaying = false;
-        }
-
-    </script>
+    <script src="js/audio.js"></script>
     
 
 </body>
