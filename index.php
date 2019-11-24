@@ -19,7 +19,6 @@
 
     // print_r($music); // prints out all music records in table 
     // print_r($music[0]['Song_name']); // Get song name for 0th element
-
 ?>
 
 <!DOCTYPE html>
@@ -47,11 +46,11 @@
 
     <!-- Song Information Div -->
     <div id="songInfoDiv">
-        <img src="img/generic cover.jpg">
-        <h2>Song Title</h2>
-        <h4>Artist</h4>
-        <h4>Album</h4>
-        <h4>Year</h4>
+        <img src="img/generic cover.jpg" id="songInfoAlbumPhoto">
+        <h2 id="songInfoTitle">Song Title</h2>
+        <h4 id="songInfoArtist">Artist</h4>
+        <h4 id="songInfoAlbum">Album</h4>
+        <h4 id="songInfoYear">Year</h4>
     </div>
 
     <!-- Vinyl Player -->
