@@ -79,7 +79,11 @@
             // Fill table with songs
             for ($x = 0; $x <= $musicCount - 1; $x++)
             {
-                echo "<tr><th>" . $music[$x]['Song_name'] . "<span class='playButton' onclick='playSong($x)'> &#9658; </span>". "</th><th>" . $music[$x]['Artist'] . "</th><th>" . $music[$x]['Album'] . "</th><th>" . $music[$x]['Year'] . "</th></tr>";
+                $songTitle = $music[$x]['Song_name']; // Holds name of song
+                $artist = $music[$x]['Artist']; // Name of artist
+                $album = $music[$x]['Album']; // Name of album
+                $year = $music[$x]['Year']; // Year of song
+                echo "<tr><th>" . $music[$x]['Song_name'] . "<span class='playButton' onclick='playSong($x, $year)'> &#9658; </span>". "</th><th>" . $music[$x]['Artist'] . "</th><th>" . $music[$x]['Album'] . "</th><th>" . $music[$x]['Year'] . "</th></tr>";
             }
         ?>
     </table>

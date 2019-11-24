@@ -1,11 +1,14 @@
 var songInfoAlbumPhoto = document.getElementById("songInfoAlbumPhoto");
-
+var songInfoTitle = document.getElementById("songInfoTitle");
+var songInfoArtist = document.getElementById("songInfoArtist");
+var songInfoAlbum = document.getElementById("songInfoAlbum");
+var songInfoYear = document.getElementById("songInfoYear");
 
 var song;
 var songPlaying = false; // Checks if song is playing
 
 // Pre: x is the number the song is in the array
-function playSong(x)
+function playSong(x, year)
 {
     // No song is playing
     if(songPlaying == false)
@@ -15,7 +18,8 @@ function playSong(x)
         songPlaying = true;
 
         // Change song information div
-        songInfoAlbumPhoto.src = "img/albumcover/" + (x + 1) + ".jpg";
+        songInfoAlbumPhoto.src = "img/albumcover/" + (x + 1) + ".jpg"; 
+        songInfoYear.innerHTML = year;
     }
 }
 
