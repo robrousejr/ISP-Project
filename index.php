@@ -4,8 +4,8 @@
     $host = 'localhost';
     $username = 'ispuser';
     $password = 'ispuserpassword';
-    $table = 'isp';
-    $conn = mysqli_connect($host, $username, $password, $table);
+    $database = 'isp';
+    $conn = mysqli_connect($host, $username, $password, $database);
 
     // check connection
     if(!$conn)
