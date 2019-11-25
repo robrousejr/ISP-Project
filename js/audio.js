@@ -6,6 +6,7 @@ var songInfoAlbum = document.getElementById("songInfoAlbum");
 var songInfoYear = document.getElementById("songInfoYear");
 var musicTable = document.getElementsByTagName("table")[0];
 var discImg = document.getElementById("discImg");
+var vinylArm = document.getElementById("vinylArm");
 
 var song;
 var songPlaying = false; // Checks if song is playing
@@ -22,6 +23,7 @@ function playSong(x, year)
         songPlaying = true;
         currentSongNumber = x; // set song number being played 
         discImg.setAttribute("style", "animation: rotate 1s infinite linear;"); // Make disc spin
+        vinylArm.setAttribute("style", "transform: rotate(30deg);"); // rotate arm on vinyl
 
 
         // Change song information div
@@ -59,4 +61,5 @@ function stopSong()
     songInfoAlbum.innerHTML = "Album";
     currentSongNumber = -1; // reset
     discImg.style.animation = ""; // Stops spinning of disc
+    vinylArm.style.transform = ""; // Puts arm back
 }
