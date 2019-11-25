@@ -8,6 +8,7 @@ var musicTable = document.getElementsByTagName("table")[0];
 
 var song;
 var songPlaying = false; // Checks if song is playing
+var currentSongNumber = -1; // Holds song as it's in array that's playing
 
 // Pre: x is the number the song is in the array
 function playSong(x, year)
@@ -18,7 +19,7 @@ function playSong(x, year)
         song = new Audio('music/' + (x + 1) + '.mp3');
         song.play();
         songPlaying = true;
-
+        currentSongNumber = x; // set song number being played 
 
         // Change song information div
         songInfoAlbumPhoto.src = "img/albumcover/" + (x + 1) + ".jpg"; 
@@ -27,6 +28,18 @@ function playSong(x, year)
         songInfoTitle.innerHTML = tmp.substring(0, tmp.indexOf('<'));
         songInfoArtist.innerHTML = musicTable.rows[x + 1].cells[1].innerHTML;
         songInfoAlbum.innerHTML = musicTable.rows[x + 1].cells[2].innerHTML;
+    }
+    // Song is playing 
+    else
+    {
+        // Different song play button
+        if(currentSongNumber != x)
+        {
+            stopSong();
+            currentSongNumber = -1; // Reset song number
+            songPlaying = false; // No song playing
+            playSong(x, year);
+        }
     }
 }
 
@@ -41,4 +54,5 @@ function stopSong()
     songInfoYear.innerHTML = "Year";
     songInfoArtist.innerHTML = "Artist";
     songInfoAlbum.innerHTML = "Album";
+    currentSongNumber = -1; // reset
 }
