@@ -1,3 +1,14 @@
+#helpBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-family: 'Alata', sans-serif;
+  padding: 10px;
+  border-radius: 10%;
+  background-color: crimson;
+  color: white;
+}
+
 #helpModal {
     display: none; /* Hidden until helpBtn click */
     position: fixed; 
@@ -10,7 +21,7 @@
 
 .modalContent {
     color: white;
-    background-color: #ff6b42;
+    background-color: crimson;
     margin: 15% auto;
     padding: 25px;
     border: 1px solid #000;
