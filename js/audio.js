@@ -21,7 +21,7 @@ function playSong(x, year)
         song.play();
         songPlaying = true;
         currentSongNumber = x; // set song number being played 
-        discImg.setAttribute("style", "animation: rotate 1s infinite linear;");
+        discImg.setAttribute("style", "animation: rotate 1s infinite linear;"); // Make disc spin
 
 
         // Change song information div
