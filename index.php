@@ -44,7 +44,7 @@
     </div><br>
     <script src="js/helpbutton.js"></script>
 
-    <!-- Song Information Div -->
+    <!-- Song Information Div (left) -->
     <div id="songInfoDiv">
         <img src="img/generic cover.jpg" id="songInfoAlbumPhoto">
         <h2 id="songInfoTitle">Song Title</h2>
@@ -53,15 +53,15 @@
         <h4 id="songInfoYear">Year</h4>
     </div>
 
-    <!-- Vinyl Player -->
-    <div id="vinylDiv">
-        <img src="img/vinyl.png" id="vinylImg">
+    <!-- Vinyl Player (middle) -->
+    <div id="discDiv">
+        <img src="img/disc.png" id="discImg">
         <script src="js/vinyl.js"></script>
     </div>
 
-    <!-- Disc images -->
-    <div id="discDiv">
-        <img src="img/disc.png" id="discImg">
+    <!-- Disc images (right) -->
+    <div id="rightDiv">
+        <p>right div</p>
     </div>
     <br style="clear:left;"/>
 

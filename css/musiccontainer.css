@@ -18,28 +18,19 @@
     font-weight: normal;
 }
 
-#vinylDiv {
+#discDiv {
     width: 40%;
     float: left;
     text-align: center;
 }
 
-#discDiv {
+#discDiv img {
+    margin: auto;
+    width: 70%;
+}
+
+#rightDiv {
     width: 30%;
     float: left;
     text-align: center;
-}
-
-#vinylImg {
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-}
-
-#discImg {
-    max-width: 100%;
-    max-height: 100%;
-    width: 30%;
-    margin: auto;
-    display: block;
 }
