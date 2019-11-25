@@ -10,7 +10,7 @@
 
 /* Album cover photo */
 #songInfoDiv img {
-    max-width: 70%;
+    width: 70%;
 }
 
 #songInfoDiv h4 {
