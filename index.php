@@ -59,7 +59,7 @@
         <script src="js/vinyl.js"></script>
     </div>
 
-    <!-- Disc images (right) -->
+    <!-- Add song (right) -->
     <div id="rightDiv">
         <p>right div</p>
     </div>
