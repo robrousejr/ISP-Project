@@ -1,3 +1,4 @@
+// On screen DOM elements
 var songInfoAlbumPhoto = document.getElementById("songInfoAlbumPhoto");
 var songInfoTitle = document.getElementById("songInfoTitle");
 var songInfoArtist = document.getElementById("songInfoArtist");
