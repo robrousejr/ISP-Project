@@ -5,6 +5,7 @@ var songInfoArtist = document.getElementById("songInfoArtist");
 var songInfoAlbum = document.getElementById("songInfoAlbum");
 var songInfoYear = document.getElementById("songInfoYear");
 var musicTable = document.getElementsByTagName("table")[0];
+var discImg = document.getElementById("discImg");
 
 var song;
 var songPlaying = false; // Checks if song is playing
@@ -20,6 +21,8 @@ function playSong(x, year)
         song.play();
         songPlaying = true;
         currentSongNumber = x; // set song number being played 
+        discImg.setAttribute("style", "animation: rotate 1s infinite linear;");
+
 
         // Change song information div
         songInfoAlbumPhoto.src = "img/albumcover/" + (x + 1) + ".jpg"; 
@@ -55,4 +58,5 @@ function stopSong()
     songInfoArtist.innerHTML = "Artist";
     songInfoAlbum.innerHTML = "Album";
     currentSongNumber = -1; // reset
+    discImg.style.animation = ""; // Stops spinning of disc
 }
