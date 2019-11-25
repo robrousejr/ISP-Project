@@ -56,6 +56,10 @@
     <!-- Vinyl Player (middle) -->
     <div id="discDiv">
         <img src="img/disc.png" id="discImg">
+        <svg id="vinylArm" viewBox="0 0 800 800">
+            <path style="fill:purple;" d="M354.5,761.6l11.9,6.2c0,0,37.1-91.5,42.4-123.7c2.7-16.4-1.1-103.9-1.1-103.9V307.5h-14.7l-0.1,232.7c0,0,3.7,87.5,1.1,103.9C389,674.6,354.5,761.6,354.5,761.6z"></path>
+            <rect x="379.7" y="239.7" style="fill:#000;" width="40.7" height="67.8"></rect>
+        </svg>
         <script src="js/vinyl.js"></script>
     </div>
 

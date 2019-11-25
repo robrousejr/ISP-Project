@@ -21,9 +21,17 @@
     width: 40%;
     float: left;
     text-align: center;
+    position: relative;
 }
 
-#discDiv img {
+#vinylArm {
+    bottom: 0px;
+    left: 40%;
+    position: absolute;
+}
+
+/*Rotating disc*/
+#discImg {
     margin: auto;
     width: 70%;
 }
