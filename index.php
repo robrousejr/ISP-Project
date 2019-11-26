@@ -67,7 +67,12 @@
     <!-- Add song (right) -->
     <div id="rightDiv">
         <form action="addSong.php" method="post" enctype="multipart/form-data">
-            
+            <input type="text" name="songName" placeholder="Song Name" class="formAlign">
+            <input type="text" name="albumName" placeholder="Album Name" class="formAlign">
+            <input type="number" name="year" placeholder="Year" class="formAlign">
+            <span class="formAlign">Album Photo</span>
+            <input type="file" name="albumPhoto" value=".JPG Photo"id="fileUpload" class="formAlign">
+            <input type="submit" value="Add Song" class="formAlign">
         </form>
     </div>
     <br style="clear:left;"/>
@@ -97,6 +102,5 @@
     <button onclick="stopSong()">Stop</button>
     <script src="js/audio.js"></script>
     
-
 </body>
 </html>
