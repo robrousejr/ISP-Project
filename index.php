@@ -65,7 +65,11 @@
 
     <!-- Add song (right) -->
     <div id="rightDiv">
-        <p>right div</p>
+        <form action="addSong.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="newSongTitle">Album JPG Photo
+            <input type="file" name="newAlbumCover" id="newAlbumCover">
+            <input type="submit" value="Add Song" name="submit">
+        </form>
     </div>
     <br style="clear:left;"/>
 
