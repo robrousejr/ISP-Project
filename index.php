@@ -28,6 +28,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/helpmodal.css">
         <link rel="stylesheet" type="text/css" href="css/musiccontainer.css">
+        <link rel="stylesheet" type="text/css" href="css/form.css">
         <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
     </head>
 <body>
@@ -66,9 +67,7 @@
     <!-- Add song (right) -->
     <div id="rightDiv">
         <form action="addSong.php" method="post" enctype="multipart/form-data">
-            <input type="text" name="newSongTitle">Album JPG Photo
-            <input type="file" name="newAlbumCover" id="newAlbumCover">
-            <input type="submit" value="Add Song" name="submit">
+            
         </form>
     </div>
     <br style="clear:left;"/>
