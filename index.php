@@ -44,6 +44,8 @@
             <li>If you want to stop the music entirely, click the 'stop' button at the bottom of the page</li><br>
             <li>If you want to add a song, fill in the table to the right to add a song to the database to listen to</li>
             </ul>
+            <a target="_blank" href="https://docs.google.com/presentation/d/1DPAu9aexEzw_qlEIHhjj_TGD72EhXKmDLh6y7zJJSjM/edit?usp=sharing"><button>Powerpoint</button></a>
+            <a target="_blank" href="https://docs.google.com/document/d/1qDJvSdbdMegI_-UOPHEBiKvC-BncrYvCFxrVlgU1XMg/edit?usp=sharing"><button>Final Report</button></a>
         </div>
     </div><br>
     <script src="js/helpbutton.js"></script>
