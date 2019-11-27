@@ -75,9 +75,9 @@
             <input type="text" name="Album" placeholder="Album Name" class="formAlign" required>
             <input type="number" name="Year" placeholder="Year" class="formAlign" required>
             <span class="formAlign"><b>Album Photo (.JPG)</b></span>
-            <input type="file" name="albumPhoto" id="albumUpload" class="formAlign">
+            <input type="file" name="albumUpload" id="albumUpload" class="formAlign">
             <span class="formAlign"><b>Song (.MP3)</b></span>
-            <input type="file" name="songMP3" id="songUpload" class="formAlign">
+            <input type="file" name="songUpload" id="songUpload" class="formAlign">
             <input type="submit" value="Add Song" class="formAlign">
         </form>
     </div>
