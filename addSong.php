@@ -12,7 +12,9 @@
     if($result)
     {
         $target_dir = "music/";
+        $album_dir = "img/albumcover/";
         $musicFile = $target_dir . basename($_FILES['songUpload']['name']); // Access uploaded .mp3 file
+        $albumFile = $album_dir . basename($_FILES['albumUpload']['name']); // Access uploaded .jpg file
 
         // Get amount of songs in table
         $rowCountResult = mysqli_query($conn, "SELECT * FROM music");
@@ -21,6 +23,10 @@
         // Put song in 'music' directory with correct name
         $newSongFilename = (strval($numSongs) . ".mp3");
         move_uploaded_file($_FILES["songUpload"]["tmp_name"], $target_dir . $newSongFilename);
+
+        // Put album cover in 'img/albumcover' directory with correct name
+        $newAlbumFilename = (strval($numSongs) . ".jpg");
+        move_uploaded_file($_FILES['albumUpload']['tmp_name'], $album_dir . $newAlbumFilename);
 
 
         header("Location: http://localhost/isp-project"); // Redirect back
