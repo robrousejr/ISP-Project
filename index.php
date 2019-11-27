@@ -39,8 +39,11 @@
         <div class="modalContent">
             <b><span class="close">&times;</span></b>
             <h1>Instructions</h1>
-            <p>Step 1: Do this...</p>
-            <p>Step 2: You can try that...</p>
+            <ul>
+            <li>Click on the 'play' button next to the song below that you want to listen to</li><br>
+            <li>If you want to stop the music entirely, click the 'stop' button at the bottom of the page</li><br>
+            <li>If you want to add a song, fill in the table to the right to add a song to the database to listen to</li>
+            </ul>
         </div>
     </div><br>
     <script src="js/helpbutton.js"></script>
@@ -67,12 +70,13 @@
     <!-- Add song (right) -->
     <div id="rightDiv">
         <form action="addSong.php" method="post" enctype="multipart/form-data">
-            <input type="text" name="Song_name" placeholder="Song Name" class="formAlign">
-            <input type="text" name="Artist" placeholder="Artist Name" class="formAlign">
-            <input type="text" name="Album" placeholder="Album Name" class="formAlign">
-            <input type="number" name="Year" placeholder="Year" class="formAlign">
-            <span class="formAlign">Album Photo</span>
+            <input type="text" name="Song_name" placeholder="Song Name" class="formAlign" required>
+            <input type="text" name="Artist" placeholder="Artist Name" class="formAlign" required>
+            <input type="text" name="Album" placeholder="Album Name" class="formAlign" required>
+            <input type="number" name="Year" placeholder="Year" class="formAlign" required>
+            <span class="formAlign"><b>Album Photo (.JPG)</b></span>
             <input type="file" name="albumPhoto" id="albumUpload" class="formAlign">
+            <span class="formAlign"><b>Song (.MP3)</b></span>
             <input type="file" name="songMP3" id="songUpload" class="formAlign">
             <input type="submit" value="Add Song" class="formAlign">
         </form>

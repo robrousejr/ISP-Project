@@ -12,5 +12,6 @@
     if($result)
     {
         header("Location: http://localhost/isp-project"); // Redirect back
+        exit(); // Stops any code below from executing
     }
 ?>
