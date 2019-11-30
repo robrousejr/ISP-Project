@@ -12,4 +12,5 @@ CREATE TABLE Music (
 insert into Music values
 (1, 'Billie Jean', 'Michael Jackson', 'Thriller', 1982),
 (2, 'Hey Jude', 'The Beatles', 'Hey Jude', 1968),
-(3, 'Tiny Dancer', 'Elton John', 'Madman Across the Water', 1971);
+(3, 'Tiny Dancer', 'Elton John', 'Madman Across the Water', 1971),
+(4, 'Christmas Song', 'Brenda Lee', 'Christmas Album', 1958);
